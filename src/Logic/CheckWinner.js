@@ -1,3 +1,4 @@
+//Check if there is a winner in the game.
 const winningCombinations = [
     [0, 1, 2], 
     [3, 4, 5], 
@@ -9,6 +10,7 @@ const winningCombinations = [
     [2, 4, 6], 
 ];
 
+//Check if there is a winnig play
 export const checkWinner = (board) => {
     for (let combination of winningCombinations) {
         const [a, b, c] = combination;
